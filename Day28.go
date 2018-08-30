@@ -39,12 +39,10 @@ func main() {
 
 	for NItr := 0; NItr < int(N); NItr++ {
 		firstNameEmailID := strings.Split(readLine(reader), " ")
-
-		firstName := firstNameEmailID[0]
-
-		emailID := firstNameEmailID[1]
-
-		arEmails[NItr] = Entry{firstName, emailID}
+        
+        	arEmails[NItr]=Entry{firstNameEmailID[0],
+				     firstNameEmailID[1]}
+    
 	}
 
 	//fmt.Println(arEmails)
